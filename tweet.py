@@ -4,11 +4,7 @@ import random
 import datetime
 import os
 
-CK = 'YZYQWNyQeBKW3wNhOw0fOzU1i'                             # Consumer Key
-CS = 'TrM5QV0nbyw6wRGtJQfm6xtqTkvzy0iFzYUfzrIb05RcTHbdgX'         # Consumer Secret
-AT = '885766804756340736-PjIGjZRxP8Z36iT1RX5FCoq13bNJk6k' # Access Token
-AS = 'S0cg78PP0YR2G4RD5xfghSyxdgu3dDeZmpica3Vhf1POn'         # Accesss Token Secert
-#twitter = OAuth1Session(os.environ["CK"],  os.environ["CS"], os.environ["AT"], os.environ["AS"])
+twitter = OAuth1Session(os.environ["CK"],  os.environ["CS"], os.environ["AT"], os.environ["AS"])
 #heroku config:set CONSUMER_KEY=*** CONSUMER_SECRET=*** ACCESS_TOKEN_KEY=*** ACCESS_TOKEN_SECRET=***
 
 # タイムライン取得用のURL
@@ -17,8 +13,7 @@ url = "https://api.twitter.com/1.1/statuses/home_timeline.json"
 # とくにパラメータは無い
 params = {}
 
-# OAuth で GET
-twitter = OAuth1Session(CK, CS, AT, AS)
+
 # ツイート投稿用のURL
 url = "https://api.twitter.com/1.1/statuses/update.json"
 
