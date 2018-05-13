@@ -27,7 +27,7 @@ params = {"status": randomtweet + " " + timestamp}
 
 
 # OAuth認証で POST method で投稿
-twitter = OAuth1Session(CK, CS, AT, AS)
+
 req = twitter.post(url, params = params)
 
 # レスポンスを確認
