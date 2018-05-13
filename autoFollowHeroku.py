@@ -51,6 +51,5 @@ u_cnt = 0
 f_cnt = 0
 api, SCREEN_NAME = get_api()
 keyword = "相互"
-a_cnt = 2
-f_cnt = follow(keyword, a_cnt)
-print('{}人をフォローしました。'.format(f_cnt))
+a_cnt = 8
+print("成功")
