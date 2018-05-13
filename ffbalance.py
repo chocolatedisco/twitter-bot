@@ -4,6 +4,7 @@ import random
 import datetime
 import tweepy
 import time
+import os
 from urllib import request
 
 def get_api():
